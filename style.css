@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    margin: 0;
+}
+
+#header{
+    height: 100vh;
+}
+
+.name-and-domain-main-div{
+
+    height: 100vh;
+    background-color: #101820FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-and-domain{
+   
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   /* background-color: aliceblue;*/
+    position: absolute;
+}
+
+.my-name{
+    position: relative;
+    margin-top: 26px;
+    color: #FEE715FF;
+    font-family: 'Tangerine', cursive;
+    font-size: 200px; 
+    letter-spacing: -10px;
+}
+
+.my-name-letter-1,
+ .my-name-letter-2,
+ .my-name-letter-3,
+ .my-name-letter-4,
+ .my-name-letter-5,
+ .my-name-letter-6,
+ .my-name-letter-7,
+ .my-name-letter-8{
+     
+    animation: name-display-animation 1s ease-in-out 1s forwards;
+    opacity: 0;
+}
+
+.my-name-letter-2{
+    animation-delay: 1.3s;
+    
+}
+.my-name-letter-3{
+    animation-delay: 1.4s;
+}
+.my-name-letter-4{
+    animation-delay: 1.5s;
+}
+.my-name-letter-5{
+    animation-delay: 1.6s;
+}
+.my-name-letter-6{
+    animation-delay: 1.7s;
+}
+.my-name-letter-7{
+    animation-delay: 1.8s;
+}
+.my-name-letter-8{
+    animation-delay: 1.9s;
+}
+
+
+
+@keyframes name-display-animation{
+
+    0%{
+        
+        opacity: 0;
+    }50%{
+        opacity: 1;
+        margin-top: -10px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 10px;
+        
+    }
+}
+
+.domain{
+    font-family: 'Russo One', sans-serif;
+    color: #E94B3CFF;
+    font-size: 40px;
+    opacity: 0;
+    margin-top: -150px;
+    margin-left: 100px;
+    animation: domain-display-animation 2s ease-in-out 2s forwards;
+}
+
+@keyframes domain-display-animation{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(50px);
+
+    }
+}
+
+.nav-bar-section{
+    width: 100%;
+    margin: 0;
+}
+
+.container-fluid{
+    overflow: hidden;
+  }
+
+a, .nav-bar-links{
+    text-decoration: none !important;
+    color: #FEE715FF !important;
+    font-size: 20px;
+}
+
+
+
+.nav-bar-buttons{
+    background-color: inherit;
+    color: #E94B3CFF;
+}
+
+.nav-bar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    background-color: #101820FF;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 1px;
+    
+}
+
+.fixed-navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+    border: 2px solid rgb(46, 45, 45);
+    background-color: rgb(26, 33, 43);
+    
+    
+}
+
+.nav-bar-links:hover{
+    
+    color: #E94B3CFF !important;
+    transform: scale(1.2) !important;
+  
+
+}
+
+.about-section{
+    height: 100vh;
+    background-color: #101820FF;
+}
+
+.hello-world-main-div{
+
+
+    background-color: #101820FF;
+    color: #FEE715FF;
+    height: 100vh;
+    padding-top: 100px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hello-world{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 1000;
+    font-size: 60px;
+
+}
+
+.I-am{
+
+    font-weight: 1000;
+    font-size: 50px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.connect-me{
+    height: 100vh;
+    background-color: #101820FF
+}
+
+
+
+.check-out{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    color: #FEE715FF;
+}
+
+
+.social-media-links-1{
+    margin-top: 200px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skills{
+    
+    background-color: #101820FF;
+}
+
+.skills-heading{
+    font-family: 'Michroma', sans-serif;
+    color: white;
+    font-size: 50px;
+}
+
+.skill-boxs{
+    height: 150px;
+    
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-name{
+    font-family: 'Iceland', cursive;
+    color: #E94B3CFF;
+    font-size: 15px;
+}
+
+.skill-icons{
+
+        font-size: 100px;
+        color: #FEE715FF;
+}
+
+.projects{
+    
+    background-color: #101820FF;
+}
+
+.projects-heading{
+
+    font-family: 'Michroma', sans-serif;
+    color: white;
+    font-size: 50px;
+
+}
+
+.card-title{
+
+    font-family: 'Chakra Petch', sans-serif !important;
+    font-size: 20px;
+    color: #FEE715FF;
+
+}
+
+.project-cards{
+    background-color:  rgb(28, 36, 44) !important;
+}
+
+.card-body{
+    color: #E94B3CFF;
+    font-family: 'Russo One', sans-serif;
+}
+
+.project-code{
+    color: rgb(250, 250, 250) !important;
+    font-family: 'Kaushan Script', cursive;
+
+
+}
+
+.contact{
+
+    background-color: #101820FF;
+    
+}
+
+
+
+.contact-detailes{
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+
+}
+
+.fa-phone-alt, .fa-envelope{
+    color: #FEE715FF;
+    font-size: 20px;
+}
+
+.insta-and-facebook{
+
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-instagram, .fa-facebook{
+
+    margin-left: 10px !important;
+    color: #FEE715FF;
+    font-size: 30px;
+}
+
+
+@media screen and  (max-width:480px){
+
+    .my-name{
+        font-size: 110px;
+        
+    }
+    
+    .domain{
+        font-size: 20px;
+        margin-top: -110px;
+    }
+    
+    a, .nav-bar-links{
+        
+        font-size: 20px;
+    }
+    
+    
+    
+    .hello-world{
+        font-size: 50px;
+    }
+    
+    .I-am{
+        font-size: 30px;
+    }
+    
+    
+    
+    }
+    
+    
+    @media screen and (min-width:481px) and  (max-width:768px){
+    
+        .my-name{
+            font-size: 150px;
+            
+        }
+        
+        .domain{
+            font-size: 30px;
+            margin-top: -110px;
+        }
+        
+        a, .nav-bar-links{
+            
+            font-size: 20px;
+        }
+        
+        .hello-world{
+            font-size: 70px;
+        }
+        
+        .I-am{
+            font-size: 50px;
+        }
+        
+        
+        
+        }
+    
+        
+    @media screen and (min-width:768px) and  (max-width:868px){
+    
+        .my-name{
+            font-size: 190px;
+            
+        }
+        
+        .domain{
+            font-size: 30px;
+            margin-top: -150px;
+        }
+        
+        a, .nav-bar-links{
+            
+            font-size: 20px;
+        }
+        
+        .hello-world{
+            font-size: 50px;
+        }
+        
+        .I-am{
+            font-size: 43px;
+        }
+        
+        
+        
+        }
+    
+    
+        @media screen and (min-width:868px) and  (max-width:968px){
+    
+            
+            
+            a, .nav-bar-links{
+                
+                font-size: 25px;
+            }
+            
+            .hello-world{
+                font-size: 70px;
+            }
+            
+            .I-am{
+                font-size: 43px;
+            }
+            
+            
+            
+            }
+    
+            @media screen and (min-width:968px) and  (max-width:1024px){
+    
+            
+            
+                a, .nav-bar-links{
+                    
+                    font-size: 25px;
+                }
+                
+                .hello-world{
+                    font-size: 70px;
+                }
+                
+                .I-am{
+                    font-size: 43px;
+                }
+                
+                
+                
+                }
+    
+                
+            @media screen and (min-width:1024px) and  (max-width:1200px){
+    
+            
+            
+                a, .nav-bar-links{
+                    
+                    font-size: 25px;
+                }
+                
+                .hello-world{
+                    font-size: 80px;
+                }
+                
+                .I-am{
+                    font-size: 53px;
+                }
+                
+                
+                
+                }
